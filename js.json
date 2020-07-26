@@ -1,0 +1,124 @@
+{
+  "data": [
+    {
+      "category": "Introduction to JavaScript",
+      "subcategory": [
+        {
+          "title": "What is JavaScript?",
+          "description": "JavaScript was initially created to “make web pages alive”.\n\nThe programs in this language are called scripts. They can be written right in a web page’s HTML and run automatically as the page loads.\n\nScripts are provided and executed as plain text. They don’t need special preparation or compilation to run.\n\nIn this aspect, JavaScript is very different from another language called Java.\n\nWhy is it called JavaScript?\nWhen JavaScript was created, it initially had another name: “LiveScript”. But Java was very popular at that time, so it was decided that positioning a new language as a “younger brother” of Java would help.\n\nBut as it evolved, JavaScript became a fully independent language with its own specification called ECMAScript, and now it has no relation to Java at all.\n\nToday, JavaScript can execute not only in the browser, but also on the server, or actually on any device that has a special program called the JavaScript engine.\n\nThe browser has an embedded engine sometimes called a “JavaScript virtual machine”.\n\nDifferent engines have different “codenames”. For example:\n\nV8 – in Chrome and Opera.\nSpiderMonkey – in Firefox.\n…There are other codenames like “Trident” and “Chakra” for different versions of IE, “ChakraCore” for Microsoft Edge, “Nitro” and “SquirrelFish” for Safari, etc.\nThe terms above are good to remember because they are used in developer articles on the internet. We’ll use them too. For instance, if “a feature X is supported by V8”, then it probably works in Chrome and Opera.\n\nHow do engines work?\nEngines are complicated. But the basics are easy.\n\nThe engine (embedded if it’s a browser) reads (“parses”) the script.\nThen it converts (“compiles”) the script to the machine language.\nAnd then the machine code runs, pretty fast.\nThe engine applies optimizations at each step of the process. It even watches the compiled script as it runs, analyzes the data that flows through it, and further optimizes the machine code based on that knowledge.",
+          "code": ""
+        },
+        {
+          "title": "What can in-browser JavaScript do?",
+          "description": "Modern JavaScript is a “safe” programming language. It does not provide low-level access to memory or CPU, because it was initially created for browsers which do not require it.\n\nJavaScript’s capabilities greatly depend on the environment it’s running in. For instance, Node.js supports functions that allow JavaScript to read/write arbitrary files, perform network requests, etc.\n\nIn-browser JavaScript can do everything related to webpage manipulation, interaction with the user, and the webserver.\n\nFor instance, in-browser JavaScript is able to:\n\nAdd new HTML to the page, change the existing content, modify styles.\nReact to user actions, run on mouse clicks, pointer movements, key presses.\nSend requests over the network to remote servers, download and upload files (so-called AJAX and COMET technologies).\nGet and set cookies, ask questions to the visitor, show messages.\nRemember the data on the client-side (“local storage”).",
+          "code": ""
+        },{
+          "title": "What CAN’T in-browser JavaScript do?",
+          "description": "JavaScript’s abilities in the browser are limited for the sake of the user’s safety. The aim is to prevent an evil webpage from accessing private information or harming the user’s data.\n\nExamples of such restrictions include:\n\nJavaScript on a webpage may not read/write arbitrary files on the hard disk, copy them or execute programs. It has no direct access to OS functions.\n\nModern browsers allow it to work with files, but the access is limited and only provided if the user does certain actions, like “dropping” a file into a browser window or selecting it via an <input> tag.\n\nThere are ways to interact with camera/microphone and other devices, but they require a user’s explicit permission. So a JavaScript-enabled page may not sneakily enable a web-camera, observe the surroundings and send the information to the NSA.\n\nDifferent tabs/windows generally do not know about each other. Sometimes they do, for example when one window uses JavaScript to open the other one. But even in this case, JavaScript from one page may not access the other if they come from different sites (from a different domain, protocol or port).\n\nThis is called the “Same Origin Policy”. To work around that, both pages must agree for data exchange and contain a special JavaScript code that handles it. We’ll cover that in the tutorial.\n\nThis limitation is, again, for the user’s safety. A page from http://anysite.com which a user has opened must not be able to access another browser tab with the URL http://gmail.com and steal information from there.\n\nJavaScript can easily communicate over the net to the server where the current page came from. But its ability to receive data from other sites/domains is crippled. Though possible, it requires explicit agreement (expressed in HTTP headers) from the remote side. Once again, that’s a safety limitation.",
+          "code": ""
+        },{
+          "title": "What makes JavaScript unique?",
+          "description": "There are at least three great things about JavaScript:\n\nFull integration with HTML/CSS.\nSimple things are done simply.\nSupport by all major browsers and enabled by default.\nJavaScript is the only browser technology that combines these three things.\n\nThat’s what makes JavaScript unique. That’s why it’s the most widespread tool for creating browser interfaces.\n\nThat said, JavaScript also allows to create servers, mobile applications, etc.",
+          "code": ""
+        },{
+          "title": "Languages “over” JavaScript",
+          "description": "The syntax of JavaScript does not suit everyone’s needs. Different people want different features.\n\nThat’s to be expected, because projects and requirements are different for everyone.\n\nSo recently a plethora of new languages appeared, which are transpiled (converted) to JavaScript before they run in the browser.\n\nModern tools make the transpilation very fast and transparent, actually allowing developers to code in another language and auto-converting it “under the hood”.\n\nExamples of such languages:\n\nCoffeeScript is a “syntactic sugar” for JavaScript. It introduces shorter syntax, allowing us to write clearer and more precise code. Usually, Ruby devs like it.\nTypeScript is concentrated on adding “strict data typing” to simplify the development and support of complex systems. It is developed by Microsoft.\nFlow also adds data typing, but in a different way. Developed by Facebook.\nDart is a standalone language that has its own engine that runs in non-browser environments (like mobile apps), but also can be transpiled to JavaScript. Developed by Google.\nThere are more. Of course, even if we use one of transpiled languages, we should also know JavaScript to really understand what we’re doing.",
+          "code": ""
+        },{
+          "title": "Summary",
+          "description": "JavaScript was initially created as a browser-only language, but is now used in many other environments as well.\nToday, JavaScript has a unique position as the most widely-adopted browser language with full integration with HTML/CSS.\nThere are many languages that get “transpiled” to JavaScript and provide certain features. It is recommended to take a look at them, at least briefly, after mastering JavaScript.\nComments",
+          "code": ""
+        },
+        {
+          "title": "Code editors",
+          "description": "A code editor is the place where programmers spend most of their time.\n\nThere are two main types of code editors: IDEs and lightweight editors. Many people use one tool of each type.\n\nIDE\nThe term IDE (Integrated Development Environment) refers to a powerful editor with many features that usually operates on a “whole project.” As the name suggests, it’s not just an editor, but a full-scale “development environment.”\n\nAn IDE loads the project (which can be many files), allows navigation between files, provides autocompletion based on the whole project (not just the open file), and integrates with a version management system (like git), a testing environment, and other “project-level” stuff.\n\nIf you haven’t selected an IDE yet, consider the following options:\n\nVisual Studio Code (cross-platform, free).\nWebStorm (cross-platform, paid).\nFor Windows, there’s also “Visual Studio”, not to be confused with “Visual Studio Code”. “Visual Studio” is a paid and mighty Windows-only editor, well-suited for the .NET platform. It’s also good at JavaScript. There’s also a free version Visual Studio Community.\n\nMany IDEs are paid, but have a trial period. Their cost is usually negligible compared to a qualified developer’s salary, so just choose the best one for you.\n\nLightweight editors\n“Lightweight editors” are not as powerful as IDEs, but they’re fast, elegant and simple.\n\nThey are mainly used to open and edit a file instantly.\n\nThe main difference between a “lightweight editor” and an “IDE” is that an IDE works on a project-level, so it loads much more data on start, analyzes the project structure if needed and so on. A lightweight editor is much faster if we need only one file.\n\nIn practice, lightweight editors may have a lot of plugins including directory-level syntax analyzers and autocompleters, so there’s no strict border between a lightweight editor and an IDE.\n\nThe following options deserve your attention:\n\nAtom (cross-platform, free).\nVisual Studio Code (cross-platform, free).\nSublime Text (cross-platform, shareware).\nNotepad++ (Windows, free).\nVim and Emacs are also cool if you know how to use them.",
+          "code": ""
+        },{
+          "title": "Developer console",
+          "description": "Code is prone to errors. You will quite likely make errors… Oh, what am I talking about? You are absolutely going to make errors, at least if you’re a human, not a robot.\n\nBut in the browser, users don’t see errors by default. So, if something goes wrong in the script, we won’t see what’s broken and can’t fix it.\n\nTo see errors and get a lot of other useful information about scripts, “developer tools” have been embedded in browsers.\n\nMost developers lean towards Chrome or Firefox for development because those browsers have the best developer tools. Other browsers also provide developer tools, sometimes with special features, but are usually playing “catch-up” to Chrome or Firefox. So most developers have a “favorite” browser and switch to others if a problem is browser-specific.\n\nDeveloper tools are potent; they have many features. To start, we’ll learn how to open them, look at errors, and run JavaScript commands.\n\nGoogle Chrome\nOpen the page bug.html.\n\nThere’s an error in the JavaScript code on it. It’s hidden from a regular visitor’s eyes, so let’s open developer tools to see it.\n\nPress F12 or, if you’re on Mac, then Cmd+Opt+J.\n\nThe developer tools will open on the Console tab by default.\n\nBelow the error message, there is a blue > symbol. It marks a “command line” where we can type JavaScript commands. Press Enter to run them.\n\nNow we can see errors, and that’s enough for a start. We’ll come back to developer tools later and cover debugging more in-depth in the chapter Debugging in Chrome.\n\nMulti-line input\n\nFirefox, Edge, and others\nMost other browsers use F12 to open developer tools.\n\nThe look & feel of them is quite similar. Once you know how to use one of these tools (you can start with Chrome), you can easily switch to another.\n\nSafari\nSafari (Mac browser, not supported by Windows/Linux) is a little bit special here. We need to enable the “Develop menu” first.\n\nOpen Preferences and go to the “Advanced” pane. There’s a checkbox at the bottom.\nNow Cmd+Opt+C can toggle the console. Also, note that the new top menu item named “Develop” has appeared. It has many commands and options.",
+          "code": ""
+        }
+      ]
+    },
+    {
+      "category": "JavaScript Fundamentals",
+      "subcategory": [
+        {
+          "title": "Change HTML Content",
+          "description": "One of many JavaScript HTML methods is getElementById().\n\nThis example uses the method to \"find\" an HTML element (with id=\"demo\") and changes the element content (innerHTML) to \"Hello JavaScript\":",
+          "code": "<!DOCTYPE html>\n<html>\n<body>\n\n<h2>What Can JavaScript Do?</h2>\n\n<p id=\"demo\">JavaScript can change HTML content.</p>\n\n<button type=\"button\" onclick='document.getElementById(\"demo\").innerHTML = \"Hello JavaScript!\"'>Click Me!</button>\n\n</body>\n</html>\n"
+        },
+        {
+          "title": "Change HTML Attribute Values",
+          "description": "",
+          "code": ""
+        },{
+          "title": "",
+          "description": "",
+          "code": ""
+        },{
+          "title": "",
+          "description": "",
+          "code": ""
+        },{
+          "title": "",
+          "description": "",
+          "code": ""
+        },{
+          "title": "",
+          "description": "",
+          "code": ""
+        },{
+          "title": "",
+          "description": "",
+          "code": ""
+        },{
+          "title": "",
+          "description": "",
+          "code": ""
+        },{
+          "title": "",
+          "description": "",
+          "code": ""
+        },{
+          "title": "",
+          "description": "",
+          "code": ""
+        },{
+          "title": "",
+          "description": "",
+          "code": ""
+        },{
+          "title": "",
+          "description": "",
+          "code": ""
+        },{
+          "title": "",
+          "description": "",
+          "code": ""
+        },{
+          "title": "",
+          "description": "",
+          "code": ""
+        },{
+          "title": "",
+          "description": "",
+          "code": ""
+        },{
+          "title": "",
+          "description": "",
+          "code": ""
+        },{
+          "title": "",
+          "description": "",
+          "code": ""
+        },{
+          "title": "",
+          "description": "",
+          "code": ""
+        }
+      ]
+    }
+
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "data": [
+    {
+      "category": "Introduction",
+      "subcategory": [
+        {
+          "title": "What is HTML?",
+          "description": "HTML stands for Hyper Text Markup Language\nHTML is the standard markup language for creating Web pages\nHTML describes the structure of a Web page\nHTML consists of a series of elements\nHTML elements tell the browser how to display the content\nHTML elements label pieces of content such as \"this is a heading\", \"this is a paragraph\", \"this is a link\", etc.",
+          "code": ""
+        },
+        {
+          "title": "A Simple HTML Document",
+          "description": "The <!DOCTYPE html> declaration defines that this document is an HTML5 document\nThe <html> element is the root element of an HTML page\nThe <head> element contains meta information about the HTML page\nThe <title> element specifies a title for the HTML page (which is shown in the browser's title bar or in the page's tab)\nThe <body> element defines the document's body, and is a container for all the visible contents, such as headings, paragraphs, images, hyperlinks, tables, lists, etc.\nThe <h1> element defines a large heading\nThe <p> element defines a paragraph",
+          "code": "<!DOCTYPE html>\n<html>\n<head>\n<title>Page Title</title>\n</head>\n<body>\n\n<h1>My First Heading</h1>\n<p>My first paragraph.</p>\n\n</body>\n</html>"
+        },
+        {
+          "title": "What is an HTML Element?",
+          "description": "An HTML element is defined by a start tag, some content, and an end tag:\n\n<tagname>Content goes here...</tagname>\nThe HTML element is everything from the start tag to the end tag:\n\n<h1>My First Heading</h1>\n<p>My first paragraph.</p>",
+          "code": ""
+        }
+      ]
+    },
+    {
+      "category": "HTML Basic Examples",
+      "subcategory": [
+        {
+          "title": "HTML Documents",
+          "description": "All HTML documents must start with a document type declaration: <!DOCTYPE html>.\n\nThe HTML document itself begins with <html> and ends with </html>.\n\nThe visible part of the HTML document is between <body> and </body>.",
+          "code": "<!DOCTYPE html>\n<html>\n<body>\n\n<h1>My First Heading</h1>\n\n<p>My first paragraph.</p>\n\n</body>\n</html>\n"
+        },
+        {
+          "title": "The <!DOCTYPE> Declaration",
+          "description": "The <!DOCTYPE> declaration represents the document type, and helps browsers to display web pages correctly.\n\nIt must only appear once, at the top of the page (before any HTML tags).\n\nThe <!DOCTYPE> declaration is not case sensitive.\n\nThe <!DOCTYPE> declaration for HTML5 is:",
+          "code": "<!DOCTYPE html>"
+        },
+        {
+          "title": "HTML Headings",
+          "description": "HTML headings are defined with the <h1> to <h6> tags.\n\n<h1> defines the most important heading. <h6> defines the least important heading: \n\n",
+          "code": "<!DOCTYPE html>\n<html>\n<body>\n\n<h1>This is heading 1</h1>\n<h2>This is heading 2</h2>\n<h3>This is heading 3</h3>\n<h4>This is heading 4</h4>\n<h5>This is heading 5</h5>\n<h6>This is heading 6</h6>\n\n</body>\n</html>\n"
+        },
+        {
+          "title": "HTML Paragraphs",
+          "description": "HTML paragraphs are defined with the <p> tag:",
+          "code": "<!DOCTYPE html>\n<html>\n<body>\n\n<p>This is a paragraph.</p>\n<p>This is another paragraph.</p>\n\n</body>\n</html>\n"
+        },
+        {
+          "title": "HTML Links",
+          "description": "HTML links are defined with the <a> tag:",
+          "code": "<!DOCTYPE html>\n<html>\n<body>\n\n<h2>HTML Links</h2>\n<p>HTML links are defined with the a tag:</p>\n\n<a href=\"https://www.google.com/\">This is a link</a>\n\n</body>\n</html>\n"
+        },
+        {
+          "title": "HTML Images",
+          "description": "HTML images are defined with the <img> tag.\n\nThe source file (src), alternative text (alt), width, and height are provided as attributes:",
+          "code": "<!DOCTYPE html>\n<html>\n<body>\n\n<h2>HTML Images</h2>\n<p>HTML images are defined with the img tag:</p>\n\n<img src=\"https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png\" alt=\"image\" width=\"250\" height=\"142\">\n\n</body>\n</html>\n"
+        },
+        {
+          "title": "How to View HTML Source?",
+          "description": "Have you ever seen a Web page and wondered \"Hey! How did they do that?\"\n\nView HTML Source Code:\nRight-click in an HTML page and select \"View Page Source\" (in Chrome) or \"View Source\" (in Edge), or similar in other browsers. This will open a window containing the HTML source code of the page.\n\nInspect an HTML Element:\nRight-click on an element (or a blank area), and choose \"Inspect\" or \"Inspect Element\" to see what elements are made up of (you will see both the HTML and the CSS). You can also edit the HTML or CSS on-the-fly in the Elements or Styles panel that opens.",
+          "code": ""
+        }
+      ]
+    }
+  ]
+}
