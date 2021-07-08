@@ -68,21 +68,7 @@
           "description": "HTML elements can be nested - this means that elements can contain other elements.\n\nAll HTML documents consist of nested HTML elements.\n\nThe following example contains four HTML elements - <html>, <body>, <h1> and <p>:",
           "code": "<!DOCTYPE html>\n<html>\n<body>\n\n<h1>My First Heading</h1>\n\n<p>My first paragraph.</p>\n\n</body>\n</html>\n"
         },
-        {
-          "title": "Example Explained",
-          "description": "The <html> element is the root element and it defines the whole HTML document.\n\nIt has a start tag <html> and an end tag </html>.\n\nThen, inside the <html> element there is a <body> element:\n\n\n<body>\n\n<h1>My First Heading</h1>\n\n<p>My first paragraph.</p>\n\n</body>\n\nThe <body> element defines the document's body.\n\nIt has a start tag <body> and an end tag </body>.\n\nThen, inside the <body> element there are two other elements: <h1> and <p>:\n\n<h1>My First Heading</h1>\n\n<p>My first paragraph.</p>\n\nThe <h1> element defines a heading.\n\nIt has a start tag <h1> and an end tag </h1>:\n\n<h1>My First Heading</h1>\n\nThe <p> element defines a paragraph.\n\nIt has a start tag <p> and an end tag </p>:\n\n<p>My first paragraph.</p>",
-          "code": ""
-        },
-        {
-          "title": "Never Skip the End Tag",
-          "description": "Some HTML elements will display correctly, even if you forget the end tag: \n\n",
-          "code": "<!DOCTYPE html>\n<html>\n<body>\n\n<h1>My First Heading</h1>\n\n<p>My first paragraph.</p>\n\n</body>\n</html>\n"
-        },
-        {
-          "title": "Empty HTML Elements",
-          "description": "HTML elements with no content are called empty elements.\n\nThe <br> tag defines a line break, and is an empty element without a closing tag:",
-          "code": "<p>This is a <br> paragraph with a line break.</p>\n"
-        },
+       
         {
           "title": "HTML is Not Case Sensitive",
           "description": "HTML tags are not case sensitive: <P> means the same as <p>.",
