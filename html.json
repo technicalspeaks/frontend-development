@@ -74,21 +74,6 @@
           "code": ""
         }
       ]
-    },
-    {
-      "category": "HTML Elements",
-      "subcategory": [
-        {
-          "title": "Nested HTML Elements",
-          "description": "HTML elements can be nested - this means that elements can contain other elements.\n\nAll HTML documents consist of nested HTML elements.\n\nThe following example contains four HTML elements - <html>, <body>, <h1> and <p>:",
-          "code": "<!DOCTYPE html>\n<html>\n<body>\n\n<h1>My First Heading</h1>\n\n<p>My first paragraph.</p>\n\n</body>\n</html>\n"
-        },
-        {
-          "title": "HTML is Not Case Sensitive",
-          "description": "HTML tags are not case sensitive: <P> means the same as <p>.",
-          "code": ""
-        }
-      ]
     }
   ]
 }
