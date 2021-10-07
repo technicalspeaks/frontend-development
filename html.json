@@ -11,8 +11,8 @@
         {
           "title": "A Simple HTML Document",
           "description": "The <!DOCTYPE html> declaration defines that this document is an HTML5 document\nThe <html> element is the root element of an HTML page\nThe <head> element contains meta information about the HTML page\nThe <title> element specifies a title for the HTML page (which is shown in the browser's title bar or in the page's tab)\nThe <body> element defines the document's body, and is a container for all the visible contents, such as headings, paragraphs, images, hyperlinks, tables, lists, etc.\nThe <h1> element defines a large heading\nThe <p> element defines a paragraph",
-          "code": ""       
-	},
+          "code": ""
+        },
         {
           "title": "What is an HTML Element?",
           "description": "An HTML element is defined by a start tag, some content, and an end tag:\n\n<tagname>Content goes here...</tagname>\nThe HTML element is everything from the start tag to the end tag:\n\n<h1>My First Heading</h1>\n<p>My first paragraph.</p>",
@@ -60,7 +60,7 @@
         }
       ]
     },
-	{
+    {
       "category": "HTML Elements",
       "subcategory": [
         {
@@ -68,7 +68,21 @@
           "description": "HTML elements can be nested - this means that elements can contain other elements.\n\nAll HTML documents consist of nested HTML elements.\n\nThe following example contains four HTML elements - <html>, <body>, <h1> and <p>:",
           "code": "<!DOCTYPE html>\n<html>\n<body>\n\n<h1>My First Heading</h1>\n\n<p>My first paragraph.</p>\n\n</body>\n</html>\n"
         },
-       
+        {
+          "title": "HTML is Not Case Sensitive",
+          "description": "HTML tags are not case sensitive: <P> means the same as <p>.",
+          "code": ""
+        }
+      ]
+    },
+    {
+      "category": "HTML Elements",
+      "subcategory": [
+        {
+          "title": "Nested HTML Elements",
+          "description": "HTML elements can be nested - this means that elements can contain other elements.\n\nAll HTML documents consist of nested HTML elements.\n\nThe following example contains four HTML elements - <html>, <body>, <h1> and <p>:",
+          "code": "<!DOCTYPE html>\n<html>\n<body>\n\n<h1>My First Heading</h1>\n\n<p>My first paragraph.</p>\n\n</body>\n</html>\n"
+        },
         {
           "title": "HTML is Not Case Sensitive",
           "description": "HTML tags are not case sensitive: <P> means the same as <p>.",
@@ -78,4 +92,3 @@
     }
   ]
 }
-
